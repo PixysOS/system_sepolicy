@@ -57,6 +57,9 @@ allow shell perfetto_traces_data_file:file { r_file_perms unlink };
 # Allow shell to run adb shell cmd gpu commands.
 binder_call(shell, gpuservice);
 
+# Allow shell to run adb shell cmd gpu commands.
+binder_call(shell, gpuservice);
+
 # Allow shell to use atrace HAL
 hal_client_domain(shell, hal_atrace)
 
