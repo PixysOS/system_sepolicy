@@ -286,6 +286,7 @@ allow init {
   proc_last_kmsg
   proc_kmsg # Open /proc/kmsg for logd service.
   proc_meminfo
+  proc_slabinfo
   proc_stat # Read /proc/stat for bootchart.
   proc_uptime
   proc_version
@@ -293,6 +294,7 @@ allow init {
 
 allow init {
   proc_abi
+  proc_cpu_alignment
   proc_dirty
   proc_hostname
   proc_hung_task
